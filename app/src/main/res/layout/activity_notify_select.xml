@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    android:background="@color/light">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/close_activity"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:onClick="closeActivity"
+            android:text="Done" />
+
+        <Button
+            android:id="@+id/delete_activity"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:onClick="deleteActivity"
+            android:text="Cancel" />
+
+
+        <SurfaceView
+            android:id="@+id/colorView"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="@dimen/default_row_height"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/select_button"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        android:text="Select Application" />
+
+        <Button
+            android:id="@+id/select_light"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Select Light" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/brightness"/>
+
+    <SeekBar
+        android:id="@+id/brightnessSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:max="255"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/saturation"/>
+
+    <SeekBar
+        android:id="@+id/saturationSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:max="255"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hue"/>
+
+    <SeekBar
+        android:id="@+id/hueSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:max="65535"/>
+
+</LinearLayout>

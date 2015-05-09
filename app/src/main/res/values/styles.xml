@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:buttonStyle">@style/ALButton</item>
+    </style>
+
+    <style name="ALButton" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Location feature styles -->
+    <style name="locationFeatureHeader">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="locationFeatureToggleButton">
+        <item name="android:color">#03A9F4</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:background">@drawable/location_feature_toggle_button</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="coordinateInput">
+        <item name="android:background">@color/light</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:ems">10</item>
+    </style>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">AndroidLights</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_new">New</string>
+    <string name="action_add">Add</string>
+    <string name="name_notif">Notification name</string>
+    <string name="title_activity_color_picker">ColorPickerActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="notification_service">NotificationService</string>
+
+    <!-- General -->
+    <string name="brightness">Brightness</string>
+    <string name="saturation">Saturation</string>
+    <string name="hue">Hue</string>
+    <string name="enabled">Turn on</string>
+    <string name="disabled">Turn off</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="delete">Delete</string>
+    <string name="feature_switch_on">ON</string>
+    <string name="feature_switch_off">OFF</string>
+    <string name="coordinates">Coordinates</string>
+    <string name="latitude">Lat</string>
+    <string name="longitude">Long</string>
+    <string name="range">Activation range</string>
+    <string name="refeshingLights">Refreshing lights</string>
+    <string name="searchingForNewLights">Searching for new Lights. This might take up to a minute.</string>
+
+    <!-- Time feature -->
+    <string name="title_activity_time">Alarms</string>
+    <string name="time_view_button">Time</string>
+    <string name="time_error_date_in_past">Please select a time in the future</string>
+
+    <!-- Location feature -->
+    <string name="title_activity_location">Location</string>
+    <string name="title_maps_location">MapsActivity</string>
+    <string name="location_view_button">Location</string>
+    <string name="invalid_coordinate">Invalid coordinate</string>
+    <string name="invalid_range">Invalid activation range (integer required)</string>
+    <string name="add_location_rule_button">Add rule</string>
+    <string name="no_lights_to_add_rules_to">No lights to add more rules to</string>
+    <string name="approaching">Approaching</string>
+    <string name="leaving">Leaving</string>
+    <string name="notification_activity_title">Notifications</string>
+    <string name="add_new_notification_title">Add New Notification</string>
+    <string name="notif_enabled">ON</string>
+    <string name="notif_disabled">OFF</string>
+    <string name="timedetail_add_light_button">Add Light</string>
+
+
+</resources>

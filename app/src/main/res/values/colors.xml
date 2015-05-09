@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="extralight">#FFFFFF</color>
+    <color name="light">#E1F5FE</color>
+    <color name="medium">#B3E5FC</color>
+    <color name="medium_dark">#70CCF6</color>
+    <color name="dark">#03A9F4</color>
+    <color name="extradark">#0277BD</color>
+    <color name="accent_light">#FCE4EC</color>
+    <color name="accent_medium">#FCBBD0</color>
+    <color name="accent_dark">#E91E63</color>
+</resources>

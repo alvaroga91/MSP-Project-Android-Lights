@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@color/light"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/activeToggleButton"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/default_button_height"
+            android:textOff="@string/disabled"
+            android:textOn="@string/enabled" />
+
+        <Button
+            android:id="@+id/deleteRuleButton"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/default_button_height"
+            android:text="@string/delete" />
+
+        <SurfaceView
+            android:id="@+id/colorView"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_row_height" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/brightness" />
+
+    <SeekBar
+        android:id="@+id/brightnessSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:max="255" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/saturation" />
+
+    <SeekBar
+        android:id="@+id/saturationSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:max="255" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hue" />
+
+    <SeekBar
+        android:id="@+id/hueSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:max="65535" />
+</LinearLayout>

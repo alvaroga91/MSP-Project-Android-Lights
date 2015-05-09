@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LocationActivity">
+
+    <ToggleButton
+        android:id="@+id/locationFeatureTogglebutton"
+        style="@style/locationFeatureToggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onToggleClicked"
+        android:textOff="@string/feature_switch_off"
+        android:textOn="@string/feature_switch_on" />
+
+    <LinearLayout
+        android:id="@+id/locationFeatureGeneralChoices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationFeatureTogglebutton"
+        android:background="@color/medium"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp">
+
+                <EditText
+                    android:id="@+id/coordinateLatitude"
+                    style="@style/coordinateInput"
+                    android:layout_width="@dimen/coordinate_input_width"
+                    android:layout_height="@dimen/coordinate_input_height"
+                    android:background="@drawable/coordinate_input" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/coordinate_input_element_separation"
+                    android:layout_marginRight="@dimen/coordinate_input_element_separation"
+                    android:text="@string/latitude" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/coordinateLongitude"
+                    style="@style/coordinateInput"
+                    android:layout_width="@dimen/coordinate_input_width"
+                    android:layout_height="@dimen/coordinate_input_height"
+                    android:background="@drawable/coordinate_input" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/coordinate_input_element_separation"
+                    android:text="@string/longitude" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp">
+
+            <ImageButton
+                android:id="@+id/currentLocationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/coordinate_bar_button_separation"
+                android:background="@drawable/ic_action_locate" />
+
+            <ImageButton
+                android:id="@+id/mapCoordinatesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/coordinate_bar_button_separation"
+                android:background="@drawable/ic_action_map" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locationFeatureGeneralChoicesRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationFeatureGeneralChoices"
+        android:background="@color/medium"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/locationRange"
+                style="@style/coordinateInput"
+                android:layout_width="@dimen/coordinate_input_width"
+                android:layout_height="@dimen/coordinate_input_height"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/coordinate_input" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/coordinate_input_element_separation"
+                android:text="@string/range" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addLocationRuleButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/add_location_rule_button"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/locationFeatureExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationFeatureGeneralChoicesRow2"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="4dp" />
+
+</RelativeLayout>

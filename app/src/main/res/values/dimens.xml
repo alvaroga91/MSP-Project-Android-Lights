@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Location feature dimens -->
+    <dimen name="coordinate_input_width">60dp</dimen>
+    <dimen name="coordinate_input_height">35dp</dimen>
+    <dimen name="default_row_height">40dp</dimen>
+    <dimen name="default_button_height">40dp</dimen>
+    <dimen name="coordinate_bar_button_separation">30dp</dimen>
+    <dimen name="coordinate_input_element_separation">4dp</dimen>
+</resources>
